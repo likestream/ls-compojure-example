@@ -8,6 +8,7 @@
 
 (defroutes main-routes
   (GET "/" [] (index-page))
+  (GET "/1/tag/:tagid" [tagid] (test-page tagid))
   (route/resources "/")
   (route/not-found "Page not found"))
 
